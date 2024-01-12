@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.19)
+project(your_project_name)
+set(CMAKE_CXX_STANDARD 14)
+set(OpenCV_DIR D:/opencv/build/)
+add_executable(trafficsign_recognition_opencv-master main.cpp)
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+target_link_libraries(trafficsign_recognition_opencv-master ${OpenCV_LIBS})
